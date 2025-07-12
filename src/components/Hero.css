@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ✅ Amazon Ember V2 font */
+@font-face {
+  font-family: 'AmazonEmberV2';
+  src: url('../assets/fonts/AmazonEmberV2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero-section {
+  width: 100%;
+  height: calc(100% - 70px); 
+  background-color: #FFFAEA;
+  display: flex;
+}
+.hero-left{
+  width: 70%;
+  
+}
+.hero-right{
+    width: 30%;
+    background-color: #FFFAEA ;
+    height: calc(100vh - 60px);
+}
+.hero-right-bottom{
+  /* height: 45vh;   */
+  /* background-color: aqua; */
+  width: 96%;
+  
+}
+.hero-left-top{
+    height: 40vh;
+    width: 100%;
+    background-color: #FFFAEA;
+    padding: 16px  100px;
+}
+.left-top-title{
+    display: flex;
+    justify-content: space-between;
+}
+.left-top-title h1{
+    font-size: 1.875rem;
+    font-weight: 500;
+    font-family: Sans Serif Collection;
+    color: #000000;
+}
+
+
+.hero-para  {
+  font-family: 'AmazonEmberV2', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  width: 65%;
+  line-height: 120%;
+  margin-top: -15px;
+}
+.three-dots {
+  padding: 16px 100px;
+  color: black;
+  font-size:2rem; 
+}
+
+
+.social-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 25px;
+  background-color:#FFFAEA;
+  height: 55px;
+  width: 215px;
+  padding: 5px 4px;
+  position: relative;
+ top: 3px;
+ left: 3px;
+  border-radius: 50px;
+
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 15px;
+
+  border-radius: 6px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: white;
+  font-family: 'AmazonEmberV2', sans-serif;
+  transition: all 0.3s ease;
+}
+
+
+.social-btn:hover {
+  transform: scale(1.05);
+}
+
+.social-btn-outer{
+  background-image: url('../assets/nav-gradient.jpg'); /* ✅ CSS me kaam karega */
+  background-size: cover;
+  background-position: center;
+   height: 62px;
+  width: 222px;
+  border-radius: 50px;
+
+}
+.hero-left-bottom {
+  height: calc(100vh - 70px); 
+  /* overflow-y: auto; */
+  padding-right: 8px;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}

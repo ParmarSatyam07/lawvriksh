@@ -1,0 +1,66 @@
+.activity-main{
+     box-sizing: border-box; 
+      overflow-y: hidden; 
+      position: relative;
+      height: auto;
+}
+
+.activity-item {
+  margin-bottom: 10px;
+
+}
+
+.activity-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 33px;
+}
+
+.activity-date-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.activity-date {
+  font-size: 12px;
+  font-weight: 400;
+  color: #544629;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.activity-line {
+  width: 2px;
+  height: 48px;
+  border-radius: 2px;
+  background-image: url("../assets/nav-gradient.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.activity-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+  top: -7px;
+}
+
+.activity-title {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1e293b;
+  font-family: Sans Serif Collection;
+}
+
+.activity-link {
+  color: #4f46e5;
+  font-size: 14px;
+  text-decoration: underline;
+  word-break: break-word;
+  cursor: pointer;
+}

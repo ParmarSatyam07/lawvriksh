@@ -1,0 +1,163 @@
+.card-section-outer{
+  
+  height: auto; 
+
+}
+
+
+.card-section  {
+  padding: 24px 100px;
+  background-color: #FFFAEA;
+  margin-top: -130px;
+
+
+}
+
+
+
+/* ✅ Tabs */
+.tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 6px;
+  z-index: 0;
+}
+
+
+.tabs::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #414141;
+  z-index: 0;
+}
+
+.tab-button {
+  background-color: #FFFAEA;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.tab-button:hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+
+.section-header {
+  display: inline-flex;          
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: -12px;
+  position: relative;         
+}
+
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D8D8D8;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #414141;
+  font-family: Sans Serif Collection;
+}
+
+/* ✅ Card Carousel */
+.card-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding-bottom: 12px;
+  scroll-behavior: smooth;
+}
+
+.card-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.add-card-container {
+  margin-top: 20px;
+}
+
+.add-card-btn {
+  height: 35px;
+  position: relative;
+  padding: 6px 28px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 50px;
+  background: transparent;
+  color: transparent;
+  background-image: url('../assets/nav-gradient.jpg');
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.add-card-btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: url('../assets/nav-gradient.jpg') center/cover no-repeat;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.add-card-btn:hover {
+  transform: scale(1.07); 
+}
+
+
+.card-section + .card-section {
+  margin-top: -55px;
+}
+
+
+.card-carousel {
+  flex-wrap: nowrap;
+}
+
+
+.card {
+
+  
+  scroll-snap-align: start;
+}
+
+
+.section-header {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
